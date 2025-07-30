@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Negro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="tablet-container" class="hidden">
+        <div class="tablet">
+            <div class="tablet-header">
+                <h1><i class="fas fa-skull"></i> Mercado Negro</h1>
+                <button id="close-btn" class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="tablet-content">
+                <div class="search-section">
+                    <input type="text" id="search-input" placeholder="Buscar itens...">
+                    <div class="category-filters" id="category-filters">
+                        <button class="category-btn active" data-category="all">
+                            <i class="fas fa-th"></i> Todos
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="items-grid" id="items-grid">
+                    <!-- Itens serão carregados aqui -->
+                </div>
+                
+                <div class="cart-section">
+                    <div class="cart-header">
+                        <h3><i class="fas fa-shopping-cart"></i> Carrinho</h3>
+                        <span id="cart-total">R$ 0</span>
+                    </div>
+                    <div class="cart-items" id="cart-items">
+                        <p class="empty-cart">Carrinho vazio</p>
+                    </div>
+                    <button id="place-order-btn" class="place-order-btn" disabled>
+                        Fazer Pedido
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
