@@ -3,7 +3,7 @@ game 'gta5'
 
 name 'qb-blackmarket'
 description 'Sistema de Mercado Negro Avançado para QBCore/QBox'
-author 'Seu Nome'
+author 'AlceDev'
 version '1.0.0'
 
 shared_scripts {
